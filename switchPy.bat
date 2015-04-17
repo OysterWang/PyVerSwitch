@@ -1,11 +1,11 @@
 @echo off
 setlocal enabledelayedexpansion
-::Ê×ÏÈ×¼±¸ºÃ°²×°µÄËùÓĞpython°æ±¾µÄÂ·¾¶£¬ÈçÏÂ£º
+::é¦–å…ˆå‡†å¤‡å¥½å®‰è£…çš„æ‰€æœ‰pythonç‰ˆæœ¬çš„è·¯å¾„ï¼Œå¦‚ä¸‹ï¼š
 ::D:\Program Files\IT\Python2.7.6;
 ::D:\Python34;
-::ÔÚÏµÍ³»·¾³Ôö¼Ó±äÁ¿ ¡°PY_HOME¡±£¬ÖµÈÎÑ¡Ò»¸öÈçÉÏ°æ±¾Â·¾¶£»ÏµÍ³±äÁ¿Pathºó¼Ó ¡°;%PY_HOME%;%PY_HOME%\Scripts¡±£¬µã»÷È·ÈÏ¡£
+::åœ¨ç³»ç»Ÿç¯å¢ƒå¢åŠ å˜é‡ â€œPY_HOMEâ€ï¼Œå€¼ä»»é€‰ä¸€ä¸ªå¦‚ä¸Šç‰ˆæœ¬è·¯å¾„ï¼›ç³»ç»Ÿå˜é‡PathååŠ  â€œ;%PY_HOME%;%PY_HOME%\Scriptsâ€ï¼Œç‚¹å‡»ç¡®è®¤ã€‚
 
-echo Current python path 'PY_HOME' directory£º
+echo Current python path 'PY_HOME' directoryï¼š
 python -V
 wmic ENVIRONMENT where "name='PY_HOME' and username='<system>'" get name,UserName,VariableValue 
 
@@ -16,7 +16,7 @@ echo [3]:Switch to python3.4
 set /p needver=enter the version you need:
 if "%needver%"=="2" goto switchto2
 if "%needver%"=="3" goto switchto3
-::¿ÉÒÔ¼ÌĞøÌí¼Ópython°æ±¾ºÍ´¦Àí·½·¨
+::å¯ä»¥ç»§ç»­æ·»åŠ pythonç‰ˆæœ¬å’Œå¤„ç†æ–¹æ³•
 echo Wrong input, please choose again.
 goto choose
 
@@ -33,7 +33,7 @@ setx PY_HOME "D:\Python34;" -m
 ::wmic ENVIRONMENT where "name='PY_HOME' and username='<system>'" set VariableValue="D:\Python34;"
 goto check
 
-::¿ÉÒÔ¼ÌĞøÌí¼Ópython°æ±¾ºÍ´¦Àí·½·¨
+::å¯ä»¥ç»§ç»­æ·»åŠ pythonç‰ˆæœ¬å’Œå¤„ç†æ–¹æ³•
 
 :check
 echo.
