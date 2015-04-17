@@ -1,6 +1,5 @@
 # PyVerSwitch
-Python version switch for windows  
-Yes, it's just a bat.  
+Python version switch for windows.It's just a batch.  
 首先准备好安装的所有python版本的路径，如下：  
 D:\Program Files\IT\Python2.7.6;  
 D:\Python34;  
